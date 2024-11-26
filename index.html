@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caviar Style Website with Slider</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="m-0 font-sans leading-relaxed">
+    <header class="flex flex-col bg-gray-900 bg-opacity-90 text-white fixed w-full z-50 shadow-lg">
+        <!-- Üst Bilgi Bölümü -->
+        <div class="flex justify-between items-center px-8 py-2 text-sm bg-gray-800 w-full">
+            <!-- Sol Tarafta Telefon ve Sosyal Medya -->
+            <div class="flex items-center space-x-4">
+                <span>+90-551-985-68-47</span>
+                <div class="flex items-center space-x-2">
+                    <a href="#"><img src="photos/instagram.png" alt="Instagram" class="w-4 h-4"></a>
+                    <a href="#"><img src="photos/whatsapp.png" alt="WhatsApp" class="w-4 h-4"></a>
+                    <a href="#"><img src="photos/viber.png" alt="Viber" class="w-4 h-4"></a>
+                    <a href="#"><img src="photos/telegram.png" alt="Telegram" class="w-4 h-4"></a>
+                </div>
+            </div>
+            <!-- Sağ Tarafta Para Birimi ve Dil Seçenekleri -->
+            <div class="flex items-center space-x-4">
+                <a href="#" class="flex items-center"><span>$</span> USD</a>
+                <a href="#" class="flex items-center"><span>🌍</span> EN</a>
+            </div>
+        </div>
+    
+        <!-- Ana Navigasyon Bölümü -->
+        <div class="flex justify-between items-center px-8 py-4 w-full">
+            <div class="logo flex items-center">
+                <img src="photos/logo.jpg" alt="Logo" class="h-16 w-auto">
+            </div>
+            <nav>
+                <ul class="flex items-center space-x-8 text-sm uppercase font-semibold">
+                    <li><a href="#home" class="hover:text-yellow-400 transition-colors duration-300">About Us</a></li>
+                    <li><a href="#bespoke" class="hover:text-yellow-400 transition-colors duration-300">Bespoke</a></li>
+                    <li><a href="#custom-iphone" class="hover:text-yellow-400 transition-colors duration-300">Custom iPhone 16</a></li>
+                    <li><a href="#vision-pro" class="hover:text-yellow-400 transition-colors duration-300">Apple Vision Pro</a></li>
+                    <li><a href="#watch-cases" class="hover:text-yellow-400 transition-colors duration-300">Apple Watch Cases</a></li>
+                    <li><a href="#custom-samsung" class="hover:text-yellow-400 transition-colors duration-300">Custom Samsung</a></li>
+                    <li><a href="#gallery" class="hover:text-yellow-400 transition-colors duration-300">Gallery</a></li>
+                    <li><a href="#collections" class="hover:text-yellow-400 transition-colors duration-300">Collections</a></li>
+                    <li><a href="#catalog" class="hover:text-yellow-400 transition-colors duration-300">Catalog</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-400 transition-colors duration-300">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="#"><img src="photos/card.png" alt="Cart" class="w-6 h-6"></a>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+
+    <section id="home" class="hero-section bg-cover bg-center h-screen text-white flex justify-center items-center text-center p-5" style="background-image: url('hero-background.jpg');">
+        <div class="hero-content">
+            <h1 class="text-5xl mb-5">Luxury Redefined</h1>
+            <p class="text-xl mb-5">Discover the elegance of premium products crafted with precision.</p>
+            <a href="#products" class="cta-button bg-yellow-400 text-black py-2 px-5 rounded text-lg transition-colors duration-300 hover:bg-yellow-500">Explore Now</a>
+        </div>
+    </section>
+
+    <section id="slider" class="slider-section relative w-full max-w-[1000px] mx-auto mt-16 overflow-hidden rounded-lg shadow-lg">
+        <div class="slider-container flex transition-transform duration-500">
+            <div class="slide w-full opacity-0 transition-opacity duration-500 active:opacity-100">
+                <img src="slide1.jpg" alt="Slide 1" class="w-full rounded-lg">
+            </div>
+            <div class="slide w-full opacity-0 transition-opacity duration-500">
+                <img src="slide2.jpg" alt="Slide 2" class="w-full rounded-lg">
+            </div>
+            <div class="slide w-full opacity-0 transition-opacity duration-500">
+                <img src="slide3.jpg" alt="Slide 3" class="w-full rounded-lg">
+            </div>
+        </div>
+        <div class="slider-controls absolute top-1/2 w-full flex justify-between transform -translate-y-1/2 z-10">
+            <button id="prev-btn" class="bg-black bg-opacity-50 border-none text-white p-3 text-lg rounded-full transition-colors duration-300 hover:bg-opacity-80">&#10094;</button>
+            <button id="next-btn" class="bg-black bg-opacity-50 border-none text-white p-3 text-lg rounded-full transition-colors duration-300 hover:bg-opacity-80">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="products" class="products-section py-16 px-5 text-center">
+        <h2 class="text-4xl mb-5">Our Products</h2>
+        <div class="product-list grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1" class="w-full rounded-lg mb-5">
+                <h3 class="text-2xl mb-3">Product 1</h3>
+                <p class="text-lg">High-quality product description goes here.</p>
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Product 2" class="w-full rounded-lg mb-5">
+                <h3 class="text-2xl mb-3">Product 2</h3>
+                <p class="text-lg">High-quality product description goes here.</p>
+            </div>
+            <div class="product-card">
+                <img src="product3.jpg" alt="Product 3" class="w-full rounded-lg mb-5">
+                <h3 class="text-2xl mb-3">Product 3</h3>
+                <p class="text-lg">High-quality product description goes here.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section py-16 px-5 text-center">
+        <h2 class="text-4xl mb-5">About Us</h2>
+        <p class="text-lg">Our company is dedicated to providing luxury and premium products to our esteemed customers. Experience the best with us.</p>
+    </section>
+
+    <section id="contact" class="contact-section py-16 px-5 text-center bg-yellow-400 text-black">
+        <h2 class="text-4xl mb-5">Contact Us</h2>
+        <p class="text-lg">Email: info@example.com</p>
+        <p class="text-lg">Phone: +123 456 7890</p>
+    </section>
+
+    <footer class="bg-black text-white text-center py-5 mt-5">
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
